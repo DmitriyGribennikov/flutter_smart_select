@@ -18,12 +18,16 @@ class S2ModalStyle {
   /// Modal clip behavior
   final Clip clipBehavior;
 
+  /// Modal inset padding
+  final EdgeInsets insetPadding;
+
   /// Create a configuration of modal style
   const S2ModalStyle({
     this.shape,
     this.elevation,
     this.backgroundColor,
     this.clipBehavior,
+    this.insetPadding,
   });
 
   /// Creates a copy of this [S2ModalStyle] but with
@@ -33,12 +37,14 @@ class S2ModalStyle {
     double elevation,
     Color backgroundColor,
     Clip clipBehavior,
+    EdgeInsets insetPadding,
   }) {
     return S2ModalStyle(
       shape: shape ?? this.shape,
       elevation: elevation ?? this.elevation,
       backgroundColor: backgroundColor ?? this.backgroundColor,
       clipBehavior: clipBehavior ?? this.clipBehavior,
+      insetPadding: insetPadding ?? this.insetPadding,
     );
   }
 
@@ -53,6 +59,7 @@ class S2ModalStyle {
       elevation: other.elevation,
       backgroundColor: other.backgroundColor,
       clipBehavior: other.clipBehavior,
+      insetPadding: other.insetPadding,
     );
   }
 }

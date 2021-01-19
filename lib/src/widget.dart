@@ -1022,6 +1022,7 @@ abstract class S2State<T> extends State<SmartSelect<T>> {
           barrierDismissible: modalConfig.barrierDismissible,
           barrierColor: modalConfig.barrierColor,
           builder: (_) => Dialog(
+            insetPadding: modalStyle.insetPadding,
             shape: modalStyle.shape,
             clipBehavior: modalStyle.clipBehavior ?? Clip.antiAlias,
             backgroundColor: modalStyle.backgroundColor,
