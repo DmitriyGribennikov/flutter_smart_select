@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 
 /// Default widget for empty choices list
 class S2ChoicesEmpty extends StatelessWidget {
-
   /// default constructor
   const S2ChoicesEmpty();
 
@@ -20,7 +19,7 @@ class S2ChoicesEmpty extends StatelessWidget {
             ),
             const SizedBox(height: 25),
             const Text(
-              'Whoops, no matches',
+              'We couldn\'t find any search results',
               style: TextStyle(color: Colors.grey),
             ),
             const SizedBox(height: 7),
