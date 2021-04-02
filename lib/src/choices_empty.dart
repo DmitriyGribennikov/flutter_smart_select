@@ -19,19 +19,9 @@ class S2ChoicesEmpty extends StatelessWidget {
             ),
             const SizedBox(height: 25),
             const Text(
-              'We couldn\'t find any search results',
+              "We couldn\'t find any search results",
               style: TextStyle(color: Colors.grey),
             ),
-            const SizedBox(height: 7),
-            const Text(
-              "We couldn't find any search result",
-              style: TextStyle(color: Colors.grey),
-            ),
-            const SizedBox(height: 7),
-            const Text(
-              "Give it another go",
-              style: TextStyle(color: Colors.grey),
-            )
           ],
         ),
       ),
